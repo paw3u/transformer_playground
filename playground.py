@@ -5,6 +5,7 @@ from transformers import pipeline, set_seed
 device = 0 if torch.cuda.is_available() else -1
 generator = pipeline('text-generation', model='gpt2-large', device=device)
 set_seed(42)
+
 app = Flask(__name__)
 
 @app.route('/')

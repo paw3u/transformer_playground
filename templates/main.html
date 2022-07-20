@@ -7,6 +7,8 @@
     body {
         font-size: 14px;
         font-family: consolas;
+        background-color: #0a0a0f;
+        color: #d9d9d9;
     }
     kbd {
         display: inline-block;
@@ -27,12 +29,22 @@
         font-family: consolas;
         width:800px; 
         height:600px;
+        background-color: #d1d1e0;
+        color: #000000;
+    }
+    textarea:focus {
+      outline: none;
     }
     input{
         font-size: 14px;
         font-family: consolas;
         width:800px; 
         border:0px;
+        background-color: #0a0a0f;
+        color: #d9d9d9;
+    }
+    input:focus {
+      outline: none;
     }
 </style>
 </head>
@@ -57,9 +69,9 @@ The cat was playing in the garden.
 
     function choice_select(index){
         choice_index = index
-        if(choice_index == 0) choice0.style.backgroundColor = "LightGray"; else choice0.style.backgroundColor = "White";
-        if(choice_index == 1) choice1.style.backgroundColor = "LightGray"; else choice1.style.backgroundColor = "White";
-        if(choice_index == 2) choice2.style.backgroundColor = "LightGray"; else choice2.style.backgroundColor = "White";
+        choice0.style.backgroundColor = (choice_index == 0) ? "#33334d" : "#0a0a0f"; 
+        choice1.style.backgroundColor = (choice_index == 1) ? "#33334d" : "#0a0a0f"; 
+        choice2.style.backgroundColor = (choice_index == 2) ? "#33334d" : "#0a0a0f"; 
     }
 
     function choice_text(){
