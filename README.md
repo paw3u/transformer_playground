@@ -1,5 +1,5 @@
 # transformer_playground
-Simple python web app that enables to easily create text with a language model assistance. Inspired by the "Write With Transformer" app by HuggingFace.
+A simple python web application that allows you to easily create text with the help of a language model. Inspired by the "Write With Transformer" app by HuggingFace.
 
 Requires:
   - pytorch
